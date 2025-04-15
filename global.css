@@ -92,6 +92,7 @@ h1{
     color: var(--destaque2);
     text-align: center;
     padding: 15px;
+
 }
 
 a{
@@ -117,11 +118,12 @@ div > a:active{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
     margin: 10px 0px;
 }
 table{
     border-collapse: separate;
+    position: relative;
 }
 
 tr{
@@ -129,17 +131,34 @@ tr{
     border: 1px solid black;
 }
 
+tbody > tr:nth-child(2n){
+    background-color: rgba(255, 255, 0, 0.705);
+}
+
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: rgb(255, 255, 0);
+}
+
 th{
     text-align: center;
     border: 1px solid black;
     padding: 5px 7px;
-    background-color: rgba(255, 255, 0, 0.705);
+    background-color: rgba(255, 255, 0, 0.808);
 }
 
 td{
     text-align: center;
     padding: 5px;
     border: 1px solid black;
+    font-weight: bold;
+}
+
+caption{
+    background-color: var(--acompanhamento);
+    font-weight: bolder;
+    padding: 20px;
 }
 
 .idk{
@@ -176,4 +195,13 @@ td{
     align-items: center;
     gap: 5px;
     margin: 10px 0px;
+}
+
+.linha{
+    border-bottom: 2px solid yellow;
+    font-size: x-large;
+    font-weight: bolder;
+}
+.captionpersonagens{
+ text-align: center;
 }
