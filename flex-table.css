@@ -1,0 +1,99 @@
+:root{
+    --background:#1e1540f1;
+    --destaque1:#614BF2;
+    --acompanhamento:#c290ffbd;
+    --backgroud-secundario:#321473;
+    --backgroud-variação:#130d27f1;
+    --destaque2:#07F2DB;
+    --destaque3:yellow;
+    
+    --font-padrão:"Nunito Sans", sans-serif;
+    --font-destaque:"Contrail One", sans-serif;
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 20px
+}
+
+.container > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px;
+}
+
+.container3{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    background-color:#130d27f1;
+    border-radius: 5px;
+}
+.container3 > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin: 10px 0px;
+}
+
+table{
+    border-collapse: collapse;
+    position: relative;
+    margin: 10px 5px;
+}
+
+tr{
+    background-color: var(--acompanhamento);
+    border: 1px solid black;
+}
+
+tbody > tr:nth-child(odd){
+    background-color: var(--acompanhamento);
+}
+
+tbody > tr:nth-child(even){
+    background-color:yellow;
+}
+
+thead > tr > th{
+    position: sticky;
+    top: -1px;
+    background-color: rgb(255, 255, 0);
+}
+
+th{
+    text-align: center;
+    border: 1px solid black;
+    padding: 5px 7px;
+    background-color: rgba(255, 255, 0, 0.808);
+}
+
+td{
+    text-align: center;
+    padding: 5px;
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+caption{
+    background-color:var(--backgroud-variação);
+    font-weight: bolder;
+    padding: 20px;
+    text-align: center;
+}
+
+.corsla{
+    background-color: var(--acompanhamento);
+    color: black;
+    font-size: larger;
+}
+.nada{
+    display: none;
+}
