@@ -6,7 +6,7 @@
 
 :root{
     --background:#1e1540f1;
-    --destaque1:#614BF2;
+    --destaque1:yellow;
     --acompanhamento:#c290ffbd;
     --backgroud-secundario:#321473;
     --backgroud-variação:#130d27f1;
@@ -117,8 +117,13 @@ li{
 }
 
 ol{
+    color: white;
     padding: 20px;
     list-style-type: upper-roman;
+}
+
+ol > li{
+    color: var(--destaque1);
 }
 
 ul{
@@ -130,6 +135,7 @@ ul{
 div > a:active{
     color: yellow;
 }
+
 
 .idk{
     width: 500px;
@@ -179,3 +185,5 @@ div > a:active{
     border-top: 3px solid yellow;
     background-color: var(--backgroud-variação);
 }
+
+

@@ -1,11 +1,10 @@
 :root{
     --background:#1e1540f1;
-    --destaque1:#614BF2;
+    --destaque1:yellow;
     --acompanhamento:#c290ffbd;
     --backgroud-secundario:#321473;
     --backgroud-variação:#130d27f1;
     --destaque2:#07F2DB;
-    --destaque3:yellow;
     
     --font-padrão:"Nunito Sans", sans-serif;
     --font-destaque:"Contrail One", sans-serif;
@@ -43,6 +42,21 @@
     margin: 10px 0px;
 }
 
+.container-grid{
+    margin: 20px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: 200px 200px 200px; 
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 20px;
+}
+.item{
+    border: 3px solid yellow;
+    background-color: var(--backgroud-variação);
+    padding: 10px;
+}
+
 table{
     border-collapse: collapse;
     position: relative;
@@ -65,14 +79,16 @@ tbody > tr:nth-child(even){
 thead > tr > th{
     position: sticky;
     top: -1px;
-    background-color: rgb(255, 255, 0);
+    background-color: var(--backgroud-secundario);
+    color: var(--destaque2);
 }
 
 th{
     text-align: center;
     border: 1px solid black;
     padding: 5px 7px;
-    background-color: rgba(255, 255, 0, 0.808);
+    background-color: var(--backgroud-secundario);
+    color: var(--destaque2);
 }
 
 td{
@@ -87,6 +103,7 @@ caption{
     font-weight: bolder;
     padding: 20px;
     text-align: center;
+    border: 1px solid black;
 }
 
 .corsla{
