@@ -1,9 +1,9 @@
 :root{
     --background:#1e1540f1;
     --destaque1:yellow;
-    --acompanhamento:#c290ffbd;
+    --acompanhamento:#c290ff;
     --backgroud-secundario:#321473;
-    --backgroud-variação:#130d27f1;
+    --backgroud-variação:#130d27;
     --destaque2:#07F2DB;
     
     --font-padrão:"Nunito Sans", sans-serif;
@@ -43,6 +43,22 @@
     margin: 10px 0px;
 }
 
+.container-info{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+    margin: 10px
+}
+
+.container-info > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin: 5px 5px;
+}
+
 .container-grid{
     margin: 20px;
     display: grid;
@@ -71,7 +87,6 @@ table{
 }
 
 tr{
-    background-color: var(--acompanhamento);
     border: 1px solid black;
 }
 
@@ -80,7 +95,7 @@ tbody > tr:nth-child(odd){
 }
 
 tbody > tr:nth-child(even){
-    background-color:yellow;
+    background-color:var(--destaque1);
 }
 
 thead > tr > th{
@@ -95,7 +110,6 @@ th{
     border: 1px solid black;
     padding: 5px 7px;
     background-color: var(--backgroud-secundario);
-    color: var(--destaque2);
 }
 
 td{
@@ -106,6 +120,7 @@ td{
 }
 
 caption{
+    color: var(--destaque2);
     background-color:var(--backgroud-variação);
     font-weight: bolder;
     padding: 20px;
@@ -113,11 +128,38 @@ caption{
     border: 1px solid black;
 }
 
-.corsla{
-    background-color: var(--acompanhamento);
-    color: black;
-    font-size: larger;
-}
 .nada{
     display: none;
+}
+
+.Ammonomicon{
+background-color: var(--backgroud-variação);
+color: white;
+}
+
+.info-titulo{
+    background-color: var(--backgroud-secundario);
+    color: var(--destaque1);
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.info-subtitulo{
+    color: var(--destaque1);
+    font-size: large;
+}
+
+.table-info{
+    height: 150px;
+    width: 300px;
+    float: right;
+    margin-left: 20px;
+}
+
+.clear{
+    clear: both;
+}
+
+.centralização{
+    text-align: center;
 }

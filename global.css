@@ -7,9 +7,9 @@
 :root{
     --background:#1e1540f1;
     --destaque1:yellow;
-    --acompanhamento:#c290ffbd;
+    --acompanhamento:#c290ff;
     --backgroud-secundario:#321473;
-    --backgroud-variação:#130d27f1;
+    --backgroud-variação:#130d27;
     --destaque2:#07F2DB;
     
     --font-padrão:"Nunito Sans", sans-serif;
@@ -49,6 +49,7 @@ nav{
 }
 
 nav a{
+    font-size: large;
     color: yellow;
     font-weight: bold;
     transition-duration: 1s;
@@ -103,11 +104,15 @@ h1{
 }
 
 a{
-    color: var(--destaque2);
-    font-size: large;
-    font-weight: bold;
+    color: var(--destaque1);
+    font-size: medium;
     text-decoration: none;
+    font-weight: bold;
     padding: 0px 10px;
+}
+
+a:hover{
+    text-decoration: underline;
 }
 
 li{
@@ -136,6 +141,15 @@ div > a:active{
     color: yellow;
 }
 
+.destaque{
+    color: var(--destaque2);
+    font-weight: bold;
+    font-size: large;
+}
+
+.destaque:hover{
+    text-decoration: none;
+}
 
 .idk{
     width: 500px;
@@ -175,6 +189,13 @@ div > a:active{
     height: 3px;
 }
 
+.linhaproporcional{
+    display: inline-block;
+    border-bottom: 3px solid yellow;
+    margin: auto;
+    padding: 0 10px;
+}
+
 .linha{
     border-bottom: 3px solid yellow;
     padding-bottom: 1px;
@@ -184,6 +205,7 @@ div > a:active{
     border-bottom: 3px solid yellow;
     border-top: 3px solid yellow;
     background-color: var(--backgroud-variação);
+    margin: 10px;
 }
 
 
