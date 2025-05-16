@@ -65,8 +65,9 @@ main{
     font-family: var(--font-padrão);
     padding: 15px;
     margin: auto;
+    width: 100%;
     max-width: 1000px;
-    min-width: 250px;
+    min-width: 200px;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.411);
 }
@@ -173,12 +174,12 @@ div > a:active{
     flex-direction: column;
 }
 
-.linhacurta{
+.Shortline{
     position: relative;
     text-align: center;
 }
 
-.linhacurta::after{
+.Shortline::after{
     content: " ";
     position: absolute;
     background-color: yellow;
@@ -189,19 +190,19 @@ div > a:active{
     height: 3px;
 }
 
-.linhaproporcional{
+.ProportionalLine{
     display: inline-block;
     border-bottom: 3px solid yellow;
     margin: auto;
     padding: 0 10px;
 }
 
-.linha{
+.line{
     border-bottom: 3px solid yellow;
     padding-bottom: 1px;
 }
 
-.linhadestaque{
+.HighlightLine{
     border-bottom: 3px solid yellow;
     border-top: 3px solid yellow;
     background-color: var(--backgroud-variação);
