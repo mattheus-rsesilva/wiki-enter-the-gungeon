@@ -16,6 +16,12 @@
     --font-destaque:"Contrail One", sans-serif;
 }
 
+@media (max-width: 1000px){
+    main{
+        padding: 5px 0px;
+    }
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -140,6 +146,11 @@ ul{
 
 div > a:active{
     color: yellow;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
 }
 
 .destaque{

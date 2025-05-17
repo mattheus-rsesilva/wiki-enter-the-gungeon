@@ -27,10 +27,11 @@
 }
 
 .container3{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     justify-content: space-evenly;
     flex-wrap: nowrap;
-    background-color:#130d27f1;
+    background-color:var(--backgroud-variação);
     border-radius: 5px;
     border: 1px solid yellow;
 }
@@ -98,19 +99,11 @@ tr{
     border: 1px solid black;
 }
 
-.TableVariation, .table-info tbody > tr:nth-child(odd){
+tbody > tr:nth-child(odd){
     background-color: var(--acompanhamento);
 }
 
-.TableVariation, .table-info tbody > tr:nth-child(even){
-    background-color:var(--destaque1);
-}
-
-.VariationSimple tr > td:nth-child(odd){
-    background-color: var(--acompanhamento);
-}
-
-.VariationSimple tr > td:nth-child(even){
+tbody > tr:nth-child(even){
     background-color:var(--destaque1);
 }
 
