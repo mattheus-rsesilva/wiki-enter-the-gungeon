@@ -65,6 +65,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     justify-items: center;
+    justify-content: center;
     gap: 20px;
 }
 .item{
@@ -90,6 +91,7 @@
 }
 
 table{
+    margin: auto;
     border-collapse: collapse;
     position: relative;
     margin: 10px 5px;
@@ -160,9 +162,6 @@ color: white;
 .table-info{
     height: auto;
     width: 100%;
-    max-width: 300px;
-    float: right;
-    margin-left: 20px;
 }
 
 .clear{

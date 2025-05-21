@@ -16,10 +16,51 @@
     --font-destaque:"Contrail One", sans-serif;
 }
 
-@media (max-width: 1000px){
+@media (max-width: 1600px){
+
     main{
-        padding: 5px 0px;
+        padding: 15px;
     }
+
+    nav{
+        width: 340px;
+        padding-left: 12px;        
+    }
+
+    .table-info{
+        float: right;
+        margin-left: 20px;
+        max-width: 35%;
+    }
+}
+
+@media (max-width: 540px){
+
+    main{
+        padding: 10px 0px;
+        display: flow-root;
+    }
+
+    nav{
+        flex-wrap: wrap;
+        width: fit-content;
+        padding: 0px 10px;
+    }
+
+    .container-grid2{
+        justify-content: center;
+    }
+
+    .table-info{
+        float: none;
+        margin: auto;
+        max-width: 90%;
+    }
+
+    header{
+        margin: auto;
+    }
+
 }
 
 *{
@@ -45,9 +86,7 @@ margin: 0px 0px 0px 5px;
 nav{
     font-family: var(--font-destaque);
     display: flex;
-    background-color: var(--backgroud-secundario);
-    padding-left: 10px;
-    width: 340px;
+    background-color: var(--backgroud-secundario); 
     margin: auto;
     margin: 0px 0px 15px 15px;
     border-radius: 5px;
@@ -69,11 +108,8 @@ nav a:hover{
 main{
     background-color:var(--background);
     font-family: var(--font-padrão);
-    padding: 15px;
     margin: auto;
-    width: 100%;
-    max-width: 1000px;
-    min-width: 200px;
+    width: 80%;
     border-radius: 10px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.411);
 }
@@ -81,8 +117,7 @@ main{
 footer{
     background-color: var(--acompanhamento);
     padding-left: 10px;
-    max-width: 1000px;
-    min-width: 250px;
+    width: 80%;
     margin: auto;
     border-radius: 5px;
     box-shadow: 10px 5px 5px rgba(0, 0, 0, 0.411);
